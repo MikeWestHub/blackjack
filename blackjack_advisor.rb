@@ -23,44 +23,42 @@ hand = first_card.to_i + second_card.to_i
 
 puts "#{first_card} #{second_card} #{dealer_card} #{hand}"
 
+if first_card || second_card == "a"
+  #iterate through hard dealer hash that matches dealer_card
+  puts "puts h or dh value associated with hand key"
+else
+  #iterate through soft dealer hash that matche dealer_card
+  puts "h or dh value associated with hand key"
+end
 
+h = "hit"
+dh = "don't hit"
+#each hash in hard represents dealer_card
+hard = {
+  2 => {5 => h, 6 => h, 7 => h, 8 => h, 9 => dh, 10 => dh, 11 => dh}
+}
+#   3 =>
+#   4 =>
+#   5 =>
+#   6 =>
+#   7 =>
+#   8 =>
+#   9 =>
+#   10 =>
+#   A =>
+# }
 
-# dealer = {2,
-#           3,
-#           4,
-#           5,
-#           6,
-#           7,
-#           8,
-#           9,
-#           10,
-#           A}
-#Hard
-# h_5 =
-# h_6 =
-# h_7 =
-# h_8 =
-# h_9 =
-# h_10 =
-# h_11 =
-# h_12 =
-# h_13 =
-# h_14 =
-# h_15 =
-# h_16 =
-# h_17 =
-# h_18 =
-# h_19 =
-# h_20 =
-# h_21 =
-#
-# #Soft
-# s_13 =
-# s_14 =
-# s_15 =
-# s_16 =
-# s_17 =
-# s_18 =
-# s_19 =
-# s_20 =
-# s_21 =
+#each has in hard represents dealer_card
+soft = {
+  2 => {13 => h, 14 => h, 15 => h, 16 => h}
+}
+#   3 =>
+#   4 =>
+#   5 =>
+#   6 =>
+#   7 =>
+#   8 =>
+#   9 =>
+#   10 =>
+#   A =>
+# }
