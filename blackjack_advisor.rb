@@ -1,29 +1,33 @@
-# dealer = [2, 3, 4, 5, 6, 7, 8, 9, 10, A]
-# first_hand = [2, 3, 4, 5, 6, 7, 8, 9, 10, A]
-# second_had = [2, 3, 4, 5, 6, 7, 8, 9, 10, A]
 
 
-  puts "What is your first card?"
-    first_card = gets.chomp
 
-  puts "What is your second card?"
-    second_card = gets.chomp
+puts "What is your first card? Use 10 for face cards."
+  first_card = gets.chomp
+  first_card.to_s.downcase
 
-  puts "What is the dealer showing?"
-    dealer_card = gets.chomp
+puts "What is your second card? Use 10 for face cards."
+  second_card = gets.chomp
+  first_card.to_s.downcase
 
-    if first_card || second_card == "A"
-      puts "hard"
-    elsif first_card == second_card
-      puts "pair"
-    else
-      puts "hard"
-    end
+puts "What is the dealer showing?"
+  dealer_card = gets.chomp
+  first_card.to_s.downcase
 
-  puts = first_card
-  puts = second_card
-  puts = dealer_card
+hand = first_card.to_i + second_card.to_i
 
+puts "#{first_card} #{second_card} #{dealer_card} #{hand}"
+
+
+# dealer = {2,
+#           3,
+#           4,
+#           5,
+#           6,
+#           7,
+#           8,
+#           9,
+#           10,
+#           A}
 #Hard
 # h_5 =
 # h_6 =
@@ -53,16 +57,3 @@
 # s_19 =
 # s_20 =
 # s_21 =
-#
-# #Pair
-# p_2 =
-# p_3 =
-# p_4 =
-# p_5 =
-# p_6 =
-# p_7 =
-# p_8 =
-# p_9 =
-# p_10 =
-# p_A =
-#
