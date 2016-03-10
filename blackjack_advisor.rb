@@ -1,21 +1,28 @@
-
-
+def ace(input)
+  if input.to_s.downcase == "a"
+    return input = 11
+  else
+    return input
+  end
+end
 
 puts "What is your first card? Use 10 for face cards."
-  first_card = gets.chomp
-  first_card.to_s.downcase
+  first = gets.chomp
 
 puts "What is your second card? Use 10 for face cards."
-  second_card = gets.chomp
-  first_card.to_s.downcase
+  second = gets.chomp
 
 puts "What is the dealer showing?"
-  dealer_card = gets.chomp
-  first_card.to_s.downcase
+  dealer = gets.chomp
+
+first_card = ace(first)
+second_card = ace(second)
+dealer_card = ace(dealer)
 
 hand = first_card.to_i + second_card.to_i
 
 puts "#{first_card} #{second_card} #{dealer_card} #{hand}"
+
 
 
 # dealer = {2,
